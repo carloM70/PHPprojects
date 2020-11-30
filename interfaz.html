@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>INTERFAZ</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body background='estado9.jpg'>
+
+<header>
+	<h1>BIENVENIDO AL SISTEMA DE MONITOREO UMSA</h1>
+	<img src="iconos/ING.jpg">
+</header>
+
+<section id="seccion1">
+
+
+	<div class="contenedor-principal">
+		<img src="fondos/circuito.jpg">
+		
+	</div>
+
+	<h1>METODO POST</h1>
+	<div class="equipos">
+ 
+ <form method = "post" action = "accpr.php">
+ <select size = "1" name = "equipo_in">
+   <option value = "0" selected>EQUIPO</option>
+   <option value = "data1">EQUIPO1</option>
+   <option value = "data2">EQUIPO2</option>
+   <option value = "data3">EQUIPO3</option>
+   <option value = "data4">EQUIPO4</option>
+   <option value = "data5">EQUIPO5</option>
+   <option value = "data6">EQUIPO6</option>
+   <option value = "data7">EQUIPO7</option>
+   <option value = "data8">EQUIPO8</option>
+  </select>
+  </div>
+  <div class="fechaa">
+
+ 	<h1></h1>
+    <input type="date" name="fecha">
+    </div>
+
+  <div class="inicio">
+   <h1></h1>
+   <select size = "1" name = "hora0_in">
+   <option value = "-1" selected>HORA INICIAL</option> 
+   <option value = "0">00:00</option>
+   <option value = "1">01:00</option>
+   <option value = "2">02:00</option>
+   <option value = "3">03:00</option>
+   <option value = "4">04:00</option>
+   <option value = "5">05:00</option>
+   <option value = "6">06:00</option>
+   <option value = "7">07:00</option>
+   <option value = "8">08:00</option>
+   <option value = "9">09:00</option>
+   <option value = "10">10:00</option>
+   <option value = "11">11:00</option>
+   <option value = "12">12:00</option>
+   <option value = "13">13:00</option>
+   <option value = "14">14:00</option>
+   <option value = "15">15:00</option>
+   <option value = "16">16:00</option>
+   <option value = "17">17:00</option>
+   <option value = "18">18:00</option>
+   <option value = "19">19:00</option>
+   <option value = "20">20:00</option>
+   <option value = "21">21:00</option>
+   <option value = "22">22:00</option>
+   <option value = "23">23:00</option>
+   <option value = "24">24:00</option>
+  </select>
+  </div> 
+  <div class="final">
+  <select size = "1" name = "horaf_in">
+   <option value = "-1" selected>HORA FINAL</option> 
+   <option value = "0">00:00</option>
+   <option value = "1">01:00</option>
+   <option value = "2">02:00</option>
+   <option value = "3">03:00</option>
+   <option value = "4">04:00</option>
+   <option value = "5">05:00</option>
+   <option value = "6">06:00</option>
+   <option value = "7">07:00</option>
+   <option value = "8">08:00</option>
+   <option value = "9">09:00</option>
+   <option value = "10">10:00</option>
+   <option value = "11">11:00</option>
+   <option value = "12">12:00</option>
+   <option value = "13">13:00</option>
+   <option value = "14">14:00</option>
+   <option value = "15">15:00</option>
+   <option value = "16">16:00</option>
+   <option value = "17">17:00</option>
+   <option value = "18">18:00</option>
+   <option value = "19">19:00</option>
+   <option value = "20">20:00</option>
+   <option value = "21">21:00</option>
+   <option value = "22">22:00</option>
+   <option value = "23">23:00</option>
+   <option value = "24">24:00</option>
+  </select>
+  </div>
+  <div class="enviar">
+<h1></h1>
+ <input type = "submit" value = "VER ESTADO">
+ </form>
+</div>  <!--caja para el formulario-->
+</section>  <!--FORMULARIO -->
+
+<section id="seccion2">
+
+<div class="gett">
+  <h2>METODO GET</h2>
+</div>
+
+
+<div class="caja">
+	<div class="div-imagen">
+		<a href="gethist.php?ip=data1&nom=www.google.com"><img src="iconos/google.jpg" class="img-PC"> </a>
+	</div>
+	<a href="consi.php?IP=www.google.com"><h2> GOOGLE</h2></a>
+</div>
+
+<div class="caja">
+	<div class="div-imagen">
+		<a href="gethist.php?ip=data2&nom=www.gmail.com"><img src="iconos/gmail.jpg" class="img-PC"> </a>
+	</div>
+	<a href="consi.php?IP=www.gmail.com"><h2>GMAIL</h2></a>
+  
+</div>
+
+<div class="caja">
+	<div class="div-imagen">
+		<a href="gethist.php?ip=data3&nom=www.miing.umsa.edu.bo"><img src="iconos/inge.jpg" class="img-PC"> </a>
+	</div>
+	<a href="consi.php?IP=www.miing.umsa.edu.bo"><h2>INGENIERIA</h2></a>
+  
+</div>
+
+<div class="caja">
+	<div class="div-imagen">
+		<a href="gethist.php?ip=data4&nom=www.facebook.com"><img src="iconos/facebook.jpg" class="img-PC"> </a>
+	</div>
+  <a href="consi.php?IP=www.facebook.com"><h2>FACEBOOK</h2></a>
+</div>
+
+<div class="caja">
+	<div class="div-imagen">
+		<a href="gethist.php?ip=data5&nom=www.hotmail.com"><img src="iconos/hotmail.jpg" class="img-PC"> </a>
+	</div>
+	<a href="consi.php?IP=www.hotmail.com"><h2> HOTMAIL</h2></a>
+</div>
+<div class="caja">
+	<div class="div-imagen">
+		<a href="gethist.php?ip=data6&nom=www.twitter.com"><img src="iconos/twitter.jpg" class="img-PC"> </a>
+	</div>
+<a href="consi.php?IP=www.twitter.com"><h2>TWITTER</h2></a>
+</div>
+<div class="caja">
+	<div class="div-imagen">
+		<a href="gethist.php?ip=data7&nom=www.yahoo.es"><img src="iconos/yahoo.jpg" class="img-PC"> </a>
+	</div>
+<a href="consi.php?IP=www.yahoo.es"><h2>YAHOO</h2></a>
+</div>
+<div class="caja">
+	<div class="div-imagen">
+		<a href="gethist.php?ip=data8&nom=www.youtube.com"><img src="iconos/youtube.jpg" class="img-PC"> </a>
+	</div>
+<a href="consi.php?IP=www.youtube.com"><h2>YOUTUBE</h2></a>
+</div>
+</section>
+
+<section id="seccion3">
+<img src="fondos/linux.png">
+<h2> FACULTAD DE INGENIERIA</h2>
+<h2> INGENIERIA ELECTRONICA</h2>
+<h2>Docente: Ing. Javier Sanabria Garcia</h2>
+</section>
+
+<seccion id="seccion4">
+<div class="texto">
+  <h2>TEORIA DE SISTEMAS OPERATIVOS ETN 921    -    Grupo:04</h2>
+  <h2>Estudiantes: Alarcon Coss Coaquira Carlo Inti </h2>
+  <h2>Mollericon Garcia Jorge Luis</h2>
+</div>
+</seccion>
+
+</body>
+</html>
